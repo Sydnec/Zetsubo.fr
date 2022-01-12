@@ -1,6 +1,18 @@
 body {
     background-color: black;
 }
-.logo {
-    width: 400px;
+header {
+    text-align: center;
+}
+.options {
+    display: inline-block;
+}
+.options a {
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+.options a:hover {
+    color: lightblue;
 }
