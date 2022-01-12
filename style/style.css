@@ -47,7 +47,7 @@ body {
 .title {
     margin: 25px;
 }
-#play-button {
+.music-buttons {
     margin: 0px 10px;
 }
 .music-bloc {
@@ -55,6 +55,9 @@ body {
 }
 .music-player {
     display: inline-block;
+}
+#pause-button {
+    display: none;
 }
 @media (pointer: none), (pointer: coarse) {
     * {
@@ -65,6 +68,9 @@ body {
     }
     .music-player {
         vertical-align: top;
+    }
+    #pause-button {
+        margin: 1px 10px;
     }
     #play-button {
         margin: 1px 10px;

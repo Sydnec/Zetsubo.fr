@@ -13,6 +13,7 @@
                 autoplay="autoplay"
                 muted=""
                 loop="infinite"
+                playsinline
                 src="/videos/background.mp4"
                 class="video-player"
             ></video>
@@ -31,7 +32,7 @@
         </div>
         <div class="music-bloc">
             <img
-                class="music-player"
+                class="music-buttons"
                 id="play-button"
                 src="/image/play.png"
                 alt="play button"
@@ -39,7 +40,21 @@
                 width="16px"
                 onclick="PlayMusic()"
             />
+            <img
+                class="music-buttons"
+                id="pause-button"
+                src="/image/pause.png"
+                alt="pause button"
+                height="16px"
+                width="16px"
+                onclick="PauseMusic()"
+            />
             <p class="music-player" id="song-name">Zetsubo - song_name.mp4</p>
+            <audio
+                id="music-bar"
+                class="music-player"
+                src="music\Trei Degete - Time Time.mp3"
+            ></audio>
         </div>
         <footer></footer>
     </body>
