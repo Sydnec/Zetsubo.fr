@@ -44,3 +44,10 @@ header a img {
 .title {
     margin: 25px;
 }
+.music-bloc {
+    margin-top: 20px;
+}
+.music-player {
+    display: inline-block;
+    vertical-align: top;
+}
