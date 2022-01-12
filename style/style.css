@@ -1,18 +1,46 @@
-body {
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
 }
-header {
+body {
     text-align: center;
+    color: white;
+    background-color: #000000;
+}
+.video-bloc {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.video-player {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+}
+header a img {
+    margin-top: 15px;
+}
+.nav-bar ul {
+    margin: 5px;
 }
 .options {
     display: inline-block;
 }
 .options a {
-    padding: 0px 15px 0px 15px;
     text-decoration: none;
     list-style-type: none;
+    margin: 0px 25px;
     color: white;
 }
 .options a:hover {
     color: lightblue;
+}
+.title {
+    margin: 25px;
 }
