@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="/script/script.js"></script>
+        <script type="module" src="/script/script.js"></script>
         <link rel="stylesheet" href="style/style.css" />
         <title>Zetsubo</title>
     </head>
@@ -54,6 +54,7 @@
                 id="music-bar"
                 class="music-player"
                 src="music\Trei Degete - Time Time.mp3"
+                onended="NextMusic()"
             ></audio>
         </div>
         <footer></footer>
