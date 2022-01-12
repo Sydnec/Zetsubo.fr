@@ -18,12 +18,8 @@
             ></video>
         </div>
         <header>
-            <a href="/index.html"
-                ><img
-                    src="/image/zetsubo.png"
-                    alt="Zetsubo's logo"
-                    width="40%"
-                />
+            <a href="/"
+                ><img id="logo" src="/image/zetsubo.png" alt="Zetsubo's logo" />
             </a>
         </header>
         <div class="nav-bar">
@@ -34,14 +30,15 @@
             </ul>
         </div>
         <div class="music-bloc">
-            <a class="music-player" href="">
-                <img
-                    src="/image/play.png"
-                    alt="play button"
-                    height="16px"
-                    width="16px"
-                />
-            </a>
+            <img
+                class="music-player"
+                id="play-button"
+                src="/image/play.png"
+                alt="play button"
+                height="16px"
+                width="16px"
+                onclick="PlayMusic()"
+            />
             <p class="music-player" id="song-name">Zetsubo - song_name.mp4</p>
         </div>
         <footer></footer>

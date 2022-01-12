@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 24px;
+}
+#logo {
+    width: 400px;
+    margin-top: 15px;
 }
 body {
     text-align: center;
@@ -23,9 +28,7 @@ body {
     transform: translate(-50%, -50%);
     opacity: 0.4;
 }
-header a img {
-    margin-top: 15px;
-}
+
 .nav-bar ul {
     margin: 5px;
 }
@@ -49,5 +52,18 @@ header a img {
 }
 .music-player {
     display: inline-block;
-    vertical-align: top;
+}
+@media (pointer: none), (pointer: coarse) {
+    * {
+        font-size: 16px;
+    }
+    #logo {
+        width: 60%;
+    }
+    .music-player {
+        vertical-align: top;
+    }
+    #play-button {
+        margin: 1px 10px;
+    }
 }
