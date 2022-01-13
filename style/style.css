@@ -17,6 +17,31 @@ body {
     color: white;
     background-color: #000000;
 }
+.RS-menu {
+    margin: 0% 10%;
+}
+.RS-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 53px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    border-radius: 10px;
+    border-style: double;
+    text-align: left;
+}
+.RS-logo {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    order: 1;
+}
+.RS-tag {
+    margin: 0 auto;
+    order: 2;
+}
 .video-bloc {
     position: relative;
     height: 100%;
@@ -48,27 +73,5 @@ body {
     }
     .RS-menu {
         margin: 10% 10%;
-    }
-    .RS-button {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 53px;
-        margin-bottom: 20px;
-        opacity: 0.7;
-        border-radius: 10px;
-        border-style: double;
-        text-align: left;
-    }
-    .RS-logo {
-        position: absolute;
-        height: 30px;
-        width: 30px;
-        padding-left: 10px;
-        order: 1;
-    }
-    .RS-tag {
-        margin: 0 auto;
-        order: 2;
     }
 }
