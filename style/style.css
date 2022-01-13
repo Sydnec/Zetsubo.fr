@@ -66,13 +66,4 @@ body {
     #logo {
         width: 60%;
     }
-    .music-player {
-        vertical-align: top;
-    }
-    #pause-button {
-        margin: 1px 10px;
-    }
-    #play-button {
-        margin: 1px 10px;
-    }
 }
