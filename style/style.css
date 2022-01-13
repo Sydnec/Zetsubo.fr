@@ -13,7 +13,6 @@
         url("//db.onlinewebfonts.com/t/1238db2fc008ce88465a792fad1e5519.svg#Druk Wide Medium")
             format("svg");
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +44,7 @@ body {
     height: 53px;
     margin-bottom: 20px;
     opacity: 0.7;
+    background-color: white;
     border-radius: 10px;
     border-style: double;
     text-align: left;
@@ -78,7 +78,6 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 .video-player {
     position: fixed;
@@ -93,10 +92,11 @@ body {
 @media (pointer: none), (pointer: coarse) {
     * {
         font-size: 18px;
+        overflow: hidden;
     }
     #logo {
         position: absolute;
-        top: 80%;
+        top: 75%;
         width: 40%;
         left: 30%;
     }
@@ -107,8 +107,22 @@ body {
         margin: 10% 10%;
     }
     .RS-button {
-        display: flex;
         align-items: center;
         width: 100%;
+    }
+    .RS-button:hover {
+        margin: 0 auto;
+        height: 53px;
+        margin-bottom: 20px;
+        opacity: 0.7;
+        background-color: white;
+    }
+    .RS-button:hover img {
+        height: 30px;
+        width: 30px;
+        padding-left: 10px;
+    }
+    .RS-button:hover p {
+        font-size: 18px;
     }
 }
