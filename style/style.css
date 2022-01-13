@@ -48,6 +48,12 @@ body {
     border-style: double;
     text-align: left;
 }
+.RS-button:hover {
+    margin-top: -5px;
+    height: 63px;
+    background-color: #ffffff8f;
+    margin-bottom: 15px;
+}
 .RS-logo {
     position: absolute;
     height: 30px;
