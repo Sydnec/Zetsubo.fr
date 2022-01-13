@@ -54,6 +54,14 @@ body {
     background-color: #ffffff8f;
     margin-bottom: 15px;
 }
+.RS-button:hover img {
+    height: 34px;
+    width: 34px;
+    padding-left: 8px;
+}
+.RS-button:hover p {
+    font-size: 25px;
+}
 .RS-logo {
     position: absolute;
     height: 30px;
