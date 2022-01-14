@@ -14,65 +14,67 @@
             format("svg");
 }
 * {
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     list-style-type: none;
     font-family: "Druk Wide Medium";
 }
-header {
-    text-align: center;
+.RS-mobile-menu {
+    display: none;
 }
-#logo {
-    position: inline-block;
-    width: 400px;
-    margin-top: 15px;
-}
-body {
-    color: white;
-    background-color: #000000;
-}
-.RS-menu {
-    margin: 0% 10%;
-}
-.RS-button {
-    margin: 0 auto;
+.pc-container {
     display: flex;
-    align-items: center;
-    width: 50%;
-    height: 53px;
-    margin-bottom: 20px;
-    opacity: 0.7;
-    background-color: white;
-    border-radius: 10px;
-    border-style: double;
-    text-align: left;
+    margin: 10px;
+    height: 60px;
+    justify-content: right;
 }
-.RS-button:hover {
-    margin-top: -5px;
-    height: 63px;
-    background-color: #ffffff8f;
-    margin-bottom: 15px;
+/* * Barre de logos RS * */
+.RS-menu {
+    display: inline-flex;
+    height: 100%;
+    margin: 0px 15px;
 }
-.RS-button:hover img {
-    height: 34px;
-    width: 34px;
-    padding-left: 8px;
+.RS-menu ul {
+    display: inline-flex;
 }
-.RS-button:hover p {
-    font-size: 25px;
+.RS-list {
+    display: inline-flex;
+}
+.RS-list a {
+    margin: 12.5px 5px;
 }
 .RS-logo {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    padding-left: 10px;
-    order: 1;
+    height: 35px;
+    width: 35px;
 }
-.RS-tag {
-    margin: 0 auto;
-    order: 2;
+/* * Nav bar * */
+.nav-bar {
+    display: inline-flex;
+    height: 100%;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-options a {
+    display: block;
+    margin: 21px;
+    color: white;
+}
+.nav-options a:hover {
+    font-size: 19px;
+    margin: 20.5px 19px 20.5px 16px;
+    color: wheat;
+}
+/* * Logo Zetsubo * */
+#logo {
+    width: 100%;
+}
+/* * - Background video - * */
+body {
+    background-color: #000000;
 }
 .video-bloc {
     position: relative;
@@ -89,40 +91,50 @@ body {
     transform: translate(-50%, -50%);
     opacity: 0.4;
 }
-@media (pointer: none), (pointer: coarse) {
-    * {
-        font-size: 18px;
-        overflow: hidden;
-    }
-    #logo {
+/* * -- Logo zetsubo -- * */
+#logo-container {
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+    width: 10%;
+}
+@media (max-width: 960px) {
+    #logo-container {
         position: absolute;
-        top: 75%;
-        width: 40%;
+        left: 40%;
+        bottom: 2%;
+        width: 20%;
+    }
+}
+/* ? Partie mobile ? */
+@media (pointer: none), (pointer: coarse) {
+    /* todo Logo Zetsubo en bas */
+    #logo-container {
+        position: absolute;
+        bottom: 5%;
         left: 30%;
+        width: 40%;
     }
-    .options a {
-        font-size: 50px;
+    /* todo Cacher le menu PC */
+    .pc-container {
+        display: none;
     }
-    .RS-menu {
+    /* todo Affiocher le menu mobile */
+    .RS-mobile-menu {
+        display: block;
         margin: 10% 10%;
     }
+    /* todo Mettre en forme les boutons */
     .RS-button {
-        align-items: center;
-        width: 100%;
-    }
-    .RS-button:hover {
-        margin: 0 auto;
+        /* todo Bordures arrondies */
+        border-style: hidden;
+        border-radius: 15px;
+        /* todo Hauteur et espacement */
         height: 53px;
+        width: 100%;
         margin-bottom: 20px;
-        opacity: 0.7;
+        /* todo Couleur blanchâtre */
+        opacity: 0.5;
         background-color: white;
-    }
-    .RS-button:hover img {
-        height: 30px;
-        width: 30px;
-        padding-left: 10px;
-    }
-    .RS-button:hover p {
-        font-size: 18px;
     }
 }
